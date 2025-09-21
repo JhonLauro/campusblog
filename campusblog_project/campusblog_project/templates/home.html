@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h1>CampusBlog</h1>
+  {% for p in posts %}
+    <p><b>{{ p.title }}</b> — {{ p.body }}</p>
+  {% empty %}
+    <p>No posts yet.</p>
+  {% endfor %}
+</body>
+</html>
